@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --black: #121212;
+  --white: #f0f8ff;
+  --destaque: #00a8ff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+
+body {
+  background-color: var(--white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#form-cep {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+#input-cep {
+  padding: 5px;
+}
+
+#submit-cep {
+  padding: 10px;
+  background-color: var(--destaque);
+  border: 2px solid var(--destaque);
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+#submit-cep:hover {
+  color: var(--destaque);
+  background-color: var(--white);
+}
+
+h1,
+h2 {
+  color: var(--destaque);
+}
