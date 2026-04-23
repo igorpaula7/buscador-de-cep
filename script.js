@@ -5,9 +5,9 @@ const inputCep = document.querySelector("#input-cep");
 formularioCep.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const numeroCep = inputCep.value;
+  const numeroCep = inputCep.value.replace("-", "");
 
-  if (numeroCep.trim() === "") {
+  if (!/^\d{8}$/.test(numeroCep)) {
     enderecoEncontrado.textContent = "Digite um CEP válido para prosseguir.";
     return;
   }
